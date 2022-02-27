@@ -1,0 +1,22 @@
+{{#extends 'base'}}
+{{#block 'title'}}Index{{/block}}
+{{#block 'content'}}
+
+<h1>Index Page</h1>
+<a href="/create" class="btn btn-dark">Create User</a>
+<div class="row">
+
+    {{#each dataInHbs}}
+    <div class="col-8">
+        {{this.username}} 
+    </div>
+    <div class="col-4">
+        <a href="/{{this._id}}/update">edit</a> 
+        <a href="/{{this._id}}/delete">delete</a> 
+    </div>
+    {{/each}}
+    
+</div>
+
+{{/block}}
+{{/extends}}

@@ -1,0 +1,17 @@
+{{#extends 'base'}}
+{{#block 'title'}}Update{{/block}}
+{{#block 'content'}}
+
+<h1>Update Page</h1>
+
+<div class="row">
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="username" value="{{ dataInHbs.username }}">
+        <input type="submit" value="Update">
+    </form>
+    
+</div>
+
+{{/block}}
+{{/extends}}
